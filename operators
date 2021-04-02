@@ -1,0 +1,42 @@
+//arithmetic operators
++ addition
+- subtraction
+* multiplication
+/ division
+% modulus
+_________________________________________________________________________________
+//assignment operators
+var += num //equivalent to var = var + num
+var -= num //equivalent to var = var - num
+var *= num //equivalent to var = var * num
+var /= num //equivalent to var = var / num
+var %= num //equivalent to var = var % num
+_________________________________________________________________________________
+//increment and decrement operators
+//postfix
+var++
+var--
+//prefix
+++var
+--var
+//postfix example:
+x = 1
+y = x++
+//results in x = 2, y = 1
+//prefix example:
+x = 1
+y = ++x
+//results in x = 2, y = 1
+_________________________________________________________________________________
+//relational operators
+> //GREATER THAN
+< //LESS THAN
+>= //GREATER THAN OR EQUAL TO
+<= //LESS THAN OR EQUAL TO
+== //EQUAL TO
+!= //NOT EQUAL TO
+_________________________________________________________________________________
+//logical operators
+&& //AND
+|| //OR
+! //NOT
