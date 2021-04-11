@@ -1,0 +1,79 @@
+DATATYPES:
+
+//This operator can tell you the datatypes size(bytes)
+sizeof (//datatype)
+
+Boolean:
+bool(1byte)
+//can be either true or false
+
+Character:
+char(1byte)
+//e.g. 'A'
+
+Integer:
+short(2bytes)
+int(2bytes)
+long(4bytes)
+long long(8bytes)
+//whole numbers only
+
+Floating Point:
+float(4byetes)
+double(8bytes)
+long double(8bytes)
+//allows for decimals
+
+//ARRAYS:
+
+//single-dimensional array:
+data_Type var[Index] = {element, element, element};
+//an arrays index count begins at 0
+
+//multi-dimensional arrays:
+data_Type var[index1][index1]
+
+//example:
+//This is a 2 dimensional array
+int x[2][3];
+     | Column1 | Column2 | Column3 | Column4 |
+-----|---------------------------------------|
+Row1 | x[0][0] | x[0][1] | x[0][2] | x[0][3] |
+-----|---------|---------|---------|---------|
+Row2 | x[1][0] | x[1][1] | x[1][2] | x[1][3] |
+-----|---------|---------|---------|---------|
+Row3 | x[2][0] | x[2][1] | x[2][2] | x[2]][3]|
+-----|---------------------------------------|
+
+//MEMORY
+
+memory locations:
+THE STACK //all local variable take up memory from the stack
+THE HEAP //unused program memory that can be used when the program runs to dynamically allocate the memory
+
+new var //allocates memory to the heap
+delete var //frees up the memory when no longer needed on the heap
+NULL //
+
+Dangling Pointers:
+//they are pointers pointing to non existent memory location
+
+//pointer example:
+int main()
+{
+    int var = 50;
+    int  *p;
+    p = &var;
+
+    cout << var << endl;
+    // Outputs 50 (the value of var)
+
+    cout << p << endl;
+    // Outputs var's memory location
+
+    cout << *p << endl;
+    /* Outputs 50 (the value of the variable
+     stored in the pointer p) */
+
+    return 0;
+}
