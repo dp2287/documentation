@@ -40,3 +40,7 @@ ________________________________________________________________________________
 && //AND
 || //OR
 ! //NOT
+_________________________________________________________________________________
+//memory operators
+&var  //AMPERSAND(reference)and(address-of) //denotes address in memory
+*var  //ASTERISK(dereference)and(contents-of) //used for calling a pointer
